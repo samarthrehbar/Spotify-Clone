@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body 
+{
+    background-color: antiquewhite;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+
+}
+nav {
+    font-family: "Ubuntu", sans-serif;
+
+    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+   
+}
+
+.brand img{
+    width: 65px;
+    padding: 0 8px;
+}
+
+.brand{                                                  /* Here we made brand a flex box to bring spotify in alignment with the logo, home and about etc*/
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela+Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 25px auto;         /*auto- to bring the container in centre automatically*/
+    border-radius: 12px;
+    padding: 12px;
+    background-image: url('bgg.png');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position-x: right;
+    
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    
+    display: flex;                    /* had to make bottom a flex box so that the range bar can be aligned in center*/
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column; 
+
+    
+    }   /*to bring icons in the centre*/
+    
+.icons{
+    margin: 25px 0;
+}
+
+.icons i{
+    cursor: pointer;
+}
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+
+}
+
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 70%;
+    color: black;
+    margin: 12px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.songitem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 30px;
+}
+      
+
+
+
+
+.timestamp{
+    margin:0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songitemcontainer{
+    margin-top: 30px;
+}
+.songinfo{
+    position: absolute;
+    left: 9vw;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.songinfo img{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+
+    
+}
